@@ -1,36 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Task Manager</title>
+  <title>Administrador de Tareas</title>
   <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
-  <div class="container">
-    <div class="header">
-      <h1>Task Manager</h1>
-      <div class="form">
-        <input type="text" id="taskInput" placeholder="Escribe una tarea">
-        <button id="addButton">Publicar</button>
-      </div>
+  <h1>Administrador de Tareas</h1>
+
+  <div class="task-input">
+    <input type="text" id="task-input" placeholder="Escribe una tarea...">
+    <button id="add-task-btn">Agregar</button>
+  </div>
+
+  <div class="task-sections">
+    <div class="task-section" id="todo-section">
+      <h2>Por Hacer</h2>
+      <div id="todo-list" class="task-list"></div>
     </div>
-    <div class="big-section">
-    <div class="section">
-      <h2>To Do</h2>
-      <div id="todoList" class="task-list"></div>
+    <div class="task-section" id="doing-section">
+      <h2>En Proceso</h2>
+      <div id="doing-list" class="task-list"></div>
     </div>
-    <div class="section">
-      <h2>Doing</h2>
-      <div id="doingList" class="task-list"></div>
-    </div>
-    <div class="section">
-      <h2>Done</h2>
-      <div id="doneList" class="task-list"></div>
+    <div class="task-section" id="done-section">
+      <h2>Completado</h2>
+      <div id="done-list" class="task-list"></div>
     </div>
   </div>
-</div>
 
+ <script src="index.js"></script>
 </body>
-
-<script src="index.js"></script>
 </html>
 
