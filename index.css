@@ -23,6 +23,8 @@ h1 {
   flex: 1;
   padding: 5px;
   font-size: 16px;
+  white-space: pre-wrap;
+  
 }
 
 #add-task-btn {
@@ -51,7 +53,7 @@ h1 {
   min-height: 200px;
  min-width: 200px;
  border-radius: 20px;
- background-color: #afafaf79;
+ background-color: #dbd4d479;
  
 }
 
@@ -62,6 +64,7 @@ h1 {
   background-color: rgb(255, 255, 255);
   word-wrap: break-word;
   border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(175, 177, 179, 0.486);
  
  
 }
@@ -83,4 +86,6 @@ h1 {
   margin-right: 5px;
 
 }
+
+
 
