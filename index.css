@@ -1,65 +1,74 @@
 body {
   font-family: Arial, sans-serif;
-}
-
-.container {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-.header {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.form {
+  margin: 0;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  margin-top: 10px;
+  min-height: 100vh;
+
 }
 
-.form input[type="text"] {
-  padding: 5px;
-  width: 200px;
+h1 {
+  text-align: center;
 }
 
-.form button {
-  padding: 5px 10px;
-}
-
-.section {
+.task-input {
+  display: flex;
+  align-items: center;
   margin-bottom: 20px;
-
 }
 
-.section h2 {
-  margin-bottom: 10px;
+#task-input {
+  flex: 1;
+  padding: 5px;
+  font-size: 16px;
+}
+
+#add-task-btn {
+  padding: 5px 10px;
+  font-size: 16px;
+}
+
+.task-sections {
+  display: flex;
+}
+
+.task-section {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.task-section h2 {
+  margin-top: 0;
 }
 
 .task-list {
-  border: 1px solid #ccc;
+  border: 1px solid #797575;
   padding: 10px;
+  min-height: 200px;
+ min-width: 200px;
+ border-radius: 20px;
 }
 
-.task {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.task-item {
   margin-bottom: 10px;
 }
 
-.task .buttons button {
+.delete-btn,
+.ascend-btn,
+.descend-btn {
+  background-color: #9c9696;
+  color: #ffffff;
+  border: none;
   padding: 5px 10px;
-  margin-left: 5px;
+  font-size: 14px;
+  cursor: pointer;
+
 }
 
-.red-button {
-  background-color: red;
-  color: white;
-}
+.ascend-btn {
+  background-color: #2196F3;
+  margin-right: 5px;
 
-.blue-button {
-  background-color: blue;
-  color: white;
 }
