@@ -37,22 +37,33 @@ h1 {
 .task-section {
   flex: 1;
   margin-right: 10px;
+  
 }
 
 .task-section h2 {
   margin-top: 0;
+  
 }
 
 .task-list {
-  border: 1px solid #797575;
+  border: 1px solid #797577;
   padding: 10px;
   min-height: 200px;
  min-width: 200px;
  border-radius: 20px;
+ background-color: #afafaf79;
+ 
 }
 
 .task-item {
   margin-bottom: 10px;
+  height: 100px;
+  width: 200px;
+  background-color: rgb(255, 255, 255);
+  word-wrap: break-word;
+  border-radius: 10px;
+ 
+ 
 }
 
 .delete-btn,
@@ -64,7 +75,7 @@ h1 {
   padding: 5px 10px;
   font-size: 14px;
   cursor: pointer;
-
+  
 }
 
 .ascend-btn {
@@ -72,3 +83,4 @@ h1 {
   margin-right: 5px;
 
 }
+
